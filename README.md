@@ -25,7 +25,7 @@ cd korea-open-data-mcp
 **Windows (PowerShell)** — PC 설치:
 ```bash
 pip install "mcp[cli]" httpx
-```bash
+```
 
 **Windows (PowerShell)** — PC에 설치된 모든 파이썬 버전에 한 번에 설치:
 ```powershell
