@@ -22,11 +22,14 @@ cd korea-open-data-mcp
 ```
 
 ### 2. 패키지 설치
+```powershell
+pip install "mcp[cli]" httpx
+```powershell
 
 **Windows (PowerShell)** — PC에 설치된 모든 파이썬 버전에 한 번에 설치:
 ```powershell
 Get-ChildItem "$env:LOCALAPPDATA\Programs\Python" -Directory -Filter "Python3*" | ForEach-Object { & "$($_.FullName)\python.exe" -m pip install "mcp[cli]" httpx }
-```
+```powershell
 
 **macOS / Linux**:
 ```bash
