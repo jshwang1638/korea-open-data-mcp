@@ -66,18 +66,7 @@ Get-ChildItem "$env:LOCALAPPDATA\Programs\Python" -Directory -Filter "Python3*" 
 | `baseUrl` | 호출할 API의 엔드포인트 URL | 공공데이터포털 "활용가이드" 문서의 **Call Back URL** (또는 서비스 URL) |
 | `serviceKey` | 인증키 (Encoding 버전) | 공공데이터포털 마이페이지 → 개발계정 |
 
-```json
-[
-  {
-    "baseUrl": "http://apis.data.go.kr/6480000/gyeongnammarket/gyeongnammarketList",
-    "serviceKey": "발급받은_인증키"
-  },
-  {
-    "baseUrl": "http://apis.data.go.kr/xxxx/yyyy/zzzzList",
-    "serviceKey": "다른_인증키"
-  }
-]
-```
+
 
 API 이름은 `baseUrl`의 마지막 경로 조각에서 자동으로 만들어집니다.
 (예: `.../gyeongnammarket/gyeongnammarketList` → 이름 `gyeongnammarketList`)
