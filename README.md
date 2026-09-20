@@ -15,13 +15,25 @@ data.go.kr에 등록된 대부분의 API는 `serviceKey` / `numOfRows` / `pageNo
 
 ## 설치
 
+### 1. 저장소 클론
 ```bash
-pip install -r requirements.txt
-# 또는
-pip install "mcp[cli]" httpx
+git clone https://github.com/jshwang1638/korea-open-data-mcp.git
+cd korea-open-data-mcp
 ```
 
-파이썬이 여러 버전 설치되어 있다면, MCP 클라이언트가 실제로 실행할 파이썬에 설치해야 합니다.
+### 2. 패키지 설치
+
+**Windows (PowerShell)** — PC에 설치된 모든 파이썬 버전에 한 번에 설치:
+```powershell
+Get-ChildItem "$env:LOCALAPPDATA\Programs\Python" -Directory -Filter "Python3*" | ForEach-Object { & "$($_.FullName)\python.exe" -m pip install "mcp[cli]" httpx }
+```
+
+**macOS / Linux**:
+```bash
+pip install -r requirements.txt
+```
+
+여러 파이썬 버전이 설치되어 있다면, MCP 클라이언트(Claude Desktop 등)가 실제로 실행하는 파이썬에 패키지가 설치되어 있어야 합니다. 위 Windows 명령은 이 문제를 자동으로 해결해줍니다.
 
 ## Claude Desktop 설정
 
